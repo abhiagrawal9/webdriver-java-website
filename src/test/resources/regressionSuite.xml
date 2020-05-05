@@ -3,6 +3,7 @@
 <suite name="Sample Automation Test Suite">
 	<listeners>
 		<listener class-name="com.qa.utils.ExtentReporterNG" />
+		<listener class-name="com.qa.utils.TestAllureListener" />
 		<listener class-name="com.qa.analyzer.Transformer" />
 	</listeners>
 	<test name="Swag labs test cases">
