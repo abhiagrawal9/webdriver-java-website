@@ -3,13 +3,17 @@ package com.qa.pages;
 import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import com.qa.utils.Helper;
 import com.qa.base.TestBase;
 
 public class HomePage extends TestBase {
 
-	@FindBy(className = "product_label")
+//	@FindBy(className = "product_label")
+	// @FindBy(className = "product_label")
+	// One more way of doing the above.
+	@FindBy(how = How.CLASS_NAME, using = "product_label")
 	private WebElement productsLabel;
 
 	@FindBy(xpath = "//*[text()='ADD TO CART']")
